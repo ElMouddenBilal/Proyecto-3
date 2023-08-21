@@ -1,56 +1,63 @@
+/* Configuración global */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: 'Popins', sans-serif;
+    margin: 0; /* Elimina márgenes externos */
+    padding: 0; /* Elimina padding */
+    box-sizing: border-box; /* Hace que el ancho y alto incluyan padding y borde */
+    scroll-behavior: smooth; /* Agrega un desplazamiento suave a las transiciones */
+    font-family: 'Popins', sans-serif; /* Establece la fuente para todo el documento */
 }
 
+/* Estilos para el encabezado */
 header {
-    position: fixed;
+    position: fixed; /* Fija el encabezado en la parte superior de la ventana */
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 120px;
-    background: #11141a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
+    padding: 20px 120px; /* Añade relleno en la parte superior e inferior y 120px a cada lado */
+    background: #11141a; /* Color de fondo */
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    z-index: 100; /* Capa z para la posición */
 }
 
+/* Estilos para el logotipo */
 .logo {
     font-size: 25px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 600;
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado de enlace */
+    font-weight: 600; /* Grosor de la fuente */
 }
 
+/* Estilos para los enlaces de navegación */
 nav a {
-    font-size: 18px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+    font-size: 18px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    text-decoration: none; /* Sin subrayado de enlace */
+    font-weight: 500; /* Grosor de la fuente */
+    margin-left: 35px; /* Margen izquierdo entre enlaces */
+    transition: .3s; /* Transición suave en cambios de estado */
 }
 
+/* Cambio de estilo al pasar el cursor sobre los enlaces */
 nav a:hover,
 nav a.active{
-    color:#0ef;
+    color: #0ef; /* Color del texto al pasar el cursor o estar activo */
 }
 
+/* Estilos para las secciones */
 section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background:#1f242d;
-    font-size: 100px;
-    color: #fff;
-    font-weight: 700;
+    min-height: 100vh; /* Altura mínima de la sección igual al alto de la ventana */
+    display: flex; /* Usa el modelo de caja flexible */
+    justify-content: center; /* Centra horizontalmente los elementos hijos */
+    align-items: center; /* Centra verticalmente los elementos hijos */
+    background: #1f242d; /* Color de fondo */
+    font-size: 100px; /* Tamaño de fuente */
+    color: #fff; /* Color del texto */
+    font-weight: 700; /* Grosor de la fuente */
 }
 
+/* Cambio de estilo en las secciones impares */
 section:nth-child(odd){
-    background: #323946;
+    background: #323946; /* Color de fondo para las secciones impares */
 }
